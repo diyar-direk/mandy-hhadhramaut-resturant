@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- websit logo icon  -->
+    <link rel="icon" href="imgs/logo1.png" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>مندي أرض حضر موت</title>
+  </head>
+  <body>
+    <main>
+      <div class="head padding">
+        <nav class="logo">
+          <img src="imgs/frame.png" alt="frame" class="frame" />
+          <img src="imgs/logo1.png" class="logo" alt="logo" />
+          <img src="imgs/frame.png" alt="frame" class="right frame" />
+        </nav>
+        <div class="header">
+          <h1>مندي أرض حضر موت</h1>
+          <h2>الوجبات الرئيسية</h2>
+        </div>
+      </div>
+
+      <div class="imgs">
+        <img src="imgs/prodect1.jpg" alt="prodect1" />
+        <img src="imgs/prodect2.jpg" class="hover" alt="prodect2" />
+        <img src="imgs/prodect3.jpg" alt="prodect3" />
+      </div>
+
+      <div class="product padding">
+        <div class="flex">
+          <div>
+            <h3>مضغوط</h3>
+            <p>حبة دجاج مضغوط</p>
+            <p>نفر دجاج مضغوط</p>
+            <p>حبة لحم مضغوط</p>
+            <p>نفر لحم مضغوط</p>
+          </div>
+          <div>
+            <h3>فريكة</h3>
+            <p>حبة دجاج فريكة</p>
+            <p>نفر دجاج فريكة</p>
+            <p>حبة لحم فريكة</p>
+            <p>نفر لحم فريكة</p>
+          </div>
+          <div>
+            <h3>مندي</h3>
+            <p>حبة دجاج مندي</p>
+            <p>نفر دجاج مندي</p>
+            <p>حبة لحم مندي</p>
+            <p>نفر لحم مندي</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="athors">الوجبات الأخرى</h3>
+          <div class="flex">
+            <div>
+              <h3>شوربات</h3>
+              <p>شوربة عدس</p>
+            </div>
+            <div>
+              <h3>سلطات</h3>
+              <p>سلطة شرقية</p>
+              <p>سلطة فتوش</p>
+              <p>سلطة جرجير</p>
+              <p>خيار بلبن</p>
+            </div>
+            <div>
+              <h3>إيدامات</h3>
+              <p>ايدام بطاطا</p>
+              <p>ايدام بامية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="padding">
+        <article class="flex">
+          <div>
+            <span class="icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </span>
+            <span>+963-981-155-503</span>
+          </div>
+          <div>
+            <span>rest.mandi.hadhramaut.land </span>
+            <span class="icon">
+              <i class="fa-solid fa-globe"></i>
+            </span>
+          </div>
+        </article>
+      </footer>
+    </main>
+  </body>
+</html>
+
+<!-- js  -->
+<script>
+  let imgs = document.querySelectorAll("main div.imgs img");
+  imgs.forEach((e) => {
+    e.addEventListener("mouseover", () => {
+      imgs.forEach((ele) => {
+        ele.classList.remove("hover");
+      });
+      e.classList.add("hover");
+    });
+  });
+</script>
