@@ -16,6 +16,9 @@
     <title>مندي أرض حضر موت</title>
   </head>
   <body>
+    <div class="loading">
+      <div></div>
+    </div>
     <main>
       <div class="head padding">
         <nav class="logo">
@@ -103,7 +106,13 @@
 
 <!-- js  -->
 <script>
+  window.onload = () => {
+    document.querySelector(".loading").remove();
+  };
   let imgs = document.querySelectorAll("main div.imgs img");
+  let allImages = document.querySelectorAll("img").forEach((e) => {
+    e.loading = "lazy";
+  });
   imgs.forEach((e) => {
     e.addEventListener("mouseover", () => {
       imgs.forEach((ele) => {

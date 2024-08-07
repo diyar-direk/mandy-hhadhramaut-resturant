@@ -25,6 +25,24 @@
 body {
   overflow-x: hidden;
 }
+.loading {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #000000b3;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 4px;
+  border-color: var(--main-color) transparent;
+  animation: loading 1s infinite linear;
+}
 main {
   background: black url("../imgs/background.png") center no-repeat;
   width: 100%;
@@ -143,6 +161,12 @@ footer div span.icon {
 }
 footer div span.icon i {
   color: black;
+}
+
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 797px) {
