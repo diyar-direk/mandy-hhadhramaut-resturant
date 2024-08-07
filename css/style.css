@@ -112,7 +112,7 @@ main div.imgs img.hover {
   margin-bottom: 20px;
 }
 .product .flex div {
-  flex: 1 200px;
+  flex: 1 calc((100% / 3) - 30px);
   text-align: right;
 }
 .product h3 {
@@ -126,16 +126,6 @@ main div.imgs img.hover {
   text-align: center;
   padding: 4px 0;
   font-weight: 900;
-}
-.product h3.athors {
-  background: var(--main-color);
-  width: 43%;
-  margin: 20px auto !important;
-  color: black;
-  border-radius: 20px;
-  font-size: 21px;
-  text-align: center;
-  padding: 4px 0;
 }
 .product .flex p {
   font-size: 18px;
@@ -179,14 +169,11 @@ footer div span.icon i {
   .product .flex div {
     flex: 1 calc(50% - 30px);
   }
-  .product .flex div:not(:last-of-type) {
+  .product .flex div {
     text-align: center;
   }
   .product .flex div:last-of-type {
     flex-grow: 0;
-  }
-  .product h3.athors {
-    width: 100%;
   }
 }
 @media (max-width: 560px) {
@@ -264,10 +251,7 @@ footer div span.icon i {
   .product .flex p {
     font-size: 16px;
   }
-  .product h3.athors {
-    font-size: 18px;
-    width: 97%;
-  }
+
   footer span {
     font-size: 12px;
   }
@@ -306,10 +290,7 @@ footer div span.icon i {
     font-size: 15px;
     margin-right: 20px;
   }
-  .product h3.athors {
-    font-size: 18px;
-    width: 100%;
-  }
+
   footer article {
     flex-direction: column;
   }
@@ -354,8 +335,5 @@ footer div span.icon i {
   }
   .product .flex p {
     font-size: 14px;
-  }
-  .product h3.athors {
-    font-size: 17px;
   }
 }
