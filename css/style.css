@@ -112,7 +112,7 @@ main div.imgs img.hover {
   margin-bottom: 20px;
 }
 .product .flex div {
-  flex: 1 calc((100% / 3) - 30px);
+  flex-basis: calc((100% / 3) - 30px);
   text-align: right;
 }
 .product h3 {
