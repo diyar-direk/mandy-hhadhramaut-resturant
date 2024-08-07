@@ -112,7 +112,7 @@ main div.imgs img.hover {
   margin-bottom: 20px;
 }
 .product .flex div {
-  flex-basis: calc((100% / 3) - 30px);
+  flex-basis: calc((100% / 3) - 30px) !important;
   text-align: right;
 }
 .product h3 {
@@ -167,7 +167,7 @@ footer div span.icon i {
     width: 135px;
   }
   .product .flex div {
-    flex: 1 calc(50% - 30px);
+    flex: 1 calc(50% - 30px) !important;
   }
   .product .flex div {
     text-align: center;
@@ -197,7 +197,7 @@ footer div span.icon i {
     width: 110px;
   }
   .product .flex div {
-    flex: 1 100%;
+    flex: 1 100% !important;
     text-align: right;
   }
   .product .flex div:not(:last-of-type) {
